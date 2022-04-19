@@ -9,7 +9,7 @@ public class MyArray<T> {
 
     public MyArray(T[] arrayCopy) {
 
-	T[] array = arrayCopy;
+	store = arrayCopy;
     }
 
     public int distance(MyArray other) {

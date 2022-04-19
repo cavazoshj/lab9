@@ -39,9 +39,11 @@ public class MyArrayTest {
 	    MyArray second = new MyArray(secondArray);
 
 	    dist = first.distance(second);
+	    
+	    counter++;
 	}
 
-	System.out.println("Results: " + dist);
+	System.out.println("Results: " + counter);
 
     }
 
