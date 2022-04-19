@@ -4,12 +4,15 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class MyArray<T> {
+    
+    static Random rand = new Random();
 
-    ArrayList<T> store = new ArrayList<T>();
+    ArrayList<T> store = new ArrayList<>();
 
-    public MyArray(T arrayCopy) {
+    public MyArray(T[] arrayCopy) {
 
-	this.store = arrayCopy;
+	for (int i = 0; i < arrayCopy.length; i++)
+	    store.add(arrayCopy[i]);
     }
 
     public int distance(MyArray other) {
@@ -26,8 +29,6 @@ public class MyArray<T> {
 
     public T sample() {
 	
-	Random rand = new Random();
-
 	int random = rand.nextInt(store.size());
 
 	return store.get(random);
