@@ -5,11 +5,11 @@ import java.util.Random;
 
 public class MyArray<T> {
 
-    ArrayList<T> store = new ArrayList<>();
+    ArrayList<T> store = new ArrayList<T>();
 
-    public MyArray(T[] arrayCopy) {
+    public MyArray(T arrayCopy) {
 
-	store = arrayCopy;
+	this.store = arrayCopy;
     }
 
     public int distance(MyArray other) {
@@ -24,7 +24,7 @@ public class MyArray<T> {
 	return distance;
     }
 
-    public <T> Object sample() {
+    public T sample() {
 	
 	Random rand = new Random();
 

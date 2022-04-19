@@ -33,7 +33,7 @@ public class MyArrayTest {
 	    System.out.print("Enter a word: ");
 	    secondWord = input.next();
 
-	    Character[] secondArray = ((String) secondWord).chars().mapToObj(ch -> (char) ch)
+	    Character[] secondArray = (secondWord).chars().mapToObj(ch -> (char) ch)
 		    .toArray(Character[]::new);
 
 	    MyArray second = new MyArray(secondArray);
